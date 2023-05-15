@@ -6,28 +6,28 @@ import { userDetails } from "../../redux/actions";
 import Loader from "../../components/Loader";
 
 const Deposit = () => {
-	const params = useParams();
-	const dispatch = useDispatch();
-	const user = useSelector((state) => state.auth.userDetails);
-	console.log(user);
-	const getUser = async () => {
-		const data = await getUserDetails(params.id);
-		dispatch(userDetails(data));
-	};
+  const params = useParams();
+  const dispatch = useDispatch();
+  const user = useSelector((state) => state.auth.userDetails);
+  console.log(user);
+  const getUser = async () => {
+    const data = await getUserDetails(params.id);
+    dispatch(userDetails(data));
+  };
 
-	useEffect(() => {
-		getUser();
-	}, []);
+  useEffect(() => {
+    getUser();
+  }, []);
 
-	if (user === null) return <Loader />;
+  if (user === null) return <Loader />;
 
-	return (
-		<div>
-			<h1>Deposit:</h1>
-			<p>{user.name}</p>
-			<p>{user.phone_number}</p>
-		</div>
-	);
+  return (
+    <div>
+      <h1>Deposit:</h1>
+      <p>{user.name}</p>
+      <p>{user.phone_number}</p>
+    </div>
+  );
 };
 
 export default Deposit;
