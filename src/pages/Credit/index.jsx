@@ -40,13 +40,19 @@ const Credit = () => {
 			<Button onClick={() => setNewCreditModal(true)}>New Credit</Button>
 
 			<Modal open={settingModal} onClose={() => setSettingModal(false)}>
-				<SettingModal />
+				<Box>
+					<SettingModal />
+				</Box>
 			</Modal>
 			<Modal open={allCreditsModal} onClose={() => setAllCreditsModal(false)}>
-				<AllCreditsModal />
+				<Box>
+					<AllCreditsModal />
+				</Box>
 			</Modal>
 			<Modal open={newCreditModal} onClose={() => setNewCreditModal(false)}>
-				<NewCreditModal />
+				<Box>
+					<NewCreditModal />
+				</Box>
 			</Modal>
 		</div>
 	);
