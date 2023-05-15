@@ -33,7 +33,7 @@ const Login = () => {
 					username: data.username,
 				})
 			);
-			navigate(`/home/${data.user_id}`);
+			navigate(`/${data.user_type}/${data.user_id}`);
 		}
 	};
 

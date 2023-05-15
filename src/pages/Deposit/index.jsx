@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { userDetails } from "../../redux/actions";
 import Loader from "../../components/Loader";
 
-const Home = () => {
+const Deposit = () => {
 	const params = useParams();
 	const dispatch = useDispatch();
 	const user = useSelector((state) => state.auth.userDetails);
@@ -23,10 +23,11 @@ const Home = () => {
 
 	return (
 		<div>
+			<h1>Deposit:</h1>
 			<p>{user.name}</p>
 			<p>{user.phone_number}</p>
 		</div>
 	);
 };
 
-export default Home;
+export default Deposit;
