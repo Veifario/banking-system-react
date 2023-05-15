@@ -39,6 +39,7 @@ const Login = () => {
           })
         );
         navigate(`/${data.user_type}/${data.user_id}`);
+		toast.success("Successful login");
       } else {
         toast.error(data.error_message);
       }
