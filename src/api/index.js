@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const instance = axios.create({
-	baseURL: "http://192.168.0.104:3000",
+	baseURL: "http://25.45.84.61:3000",
 	withCredentials: false,
 	headers: {
 		"Access-Control-Allow-Origin": "*",

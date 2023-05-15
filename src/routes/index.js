@@ -6,5 +6,4 @@ export const routes = [
 	{ path: "/register", element: <Register /> },
 	{ path: "/deposit/:id", element: <Deposit /> },
 	{ path: "/credit/:id", element: <Credit /> },
-	// {path: "/", element: },
 ];
