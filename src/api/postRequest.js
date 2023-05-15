@@ -9,3 +9,4 @@ export const registerUser = async (user) => {
 	const { data } = await instance.post("/register", user);
 	return data;
 };
+
