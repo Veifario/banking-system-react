@@ -5,4 +5,16 @@
 	transform: translate(-50%, -50%);
 
 	width: 60%;
+
+	.login {
+		margin-top: 20px;
+
+		text-align: center;
+		text-decoration: underline;
+		cursor: pointer;
+
+		&:hover {
+			color: #4083d2;
+		}
+	}
 }

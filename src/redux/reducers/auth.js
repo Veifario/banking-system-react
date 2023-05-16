@@ -1,6 +1,7 @@
 const initialState = {
 	user: null,
 	userDetails: null,
+	userBalance: 0,
 };
 
 export const auth = (state = initialState, { type, payload }) => {
@@ -14,6 +15,11 @@ export const auth = (state = initialState, { type, payload }) => {
 			return {
 				...state,
 				userDetails: payload,
+			};
+		case "USER_BALANCE":
+			return {
+				...state,
+				userBalance: payload,
 			};
 		default:
 			return state;

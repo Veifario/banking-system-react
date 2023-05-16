@@ -4,4 +4,15 @@
 	align-items: center;
 
 	height: 100vh;
+
+	.signUp {
+		margin-top: 20px;
+
+		text-decoration: underline;
+		cursor: pointer;
+
+		&:hover {
+			color: #4083d2;
+		}
+	}
 }

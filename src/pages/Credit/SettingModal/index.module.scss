@@ -1,23 +1,23 @@
 .root {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  padding: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 50px;
 
-  border-radius: 20px;
+	border-radius: 2px;
 
-  transform: translate(-50%, -50%);
-  background-color: white;
+	transform: translate(-50%, -50%);
+	background-color: white;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 25px;
 
-  .buttons {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-  }
+	.buttons {
+		display: flex;
+		gap: 10px;
+		margin-top: 10px;
+	}
 }

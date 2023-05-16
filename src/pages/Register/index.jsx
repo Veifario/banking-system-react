@@ -144,6 +144,9 @@ const Register = () => {
 				<Button type="submit" onClick={signup}>
 					Sign Up
 				</Button>
+				<p className={s.login} onClick={() => navigate("/login")}>
+					Have an account? Login
+				</p>
 			</FormControl>
 		</Box>
 	);

@@ -38,6 +38,7 @@ const Login = () => {
 						username: data.username,
 					})
 				);
+				localStorage.setItem("username", data.username);
 				navigate(`/${data.user_type}/${data.user_id}`);
 				toast.success("Successful login");
 			} else {
@@ -67,6 +68,9 @@ const Login = () => {
 				<Button onClick={login} type="submit" size="large">
 					Login
 				</Button>
+				<p className={s.signUp} onClick={() => navigate("/register")}>
+					Do not have an account? Sign up
+				</p>
 			</FormControl>
 		</Box>
 	);
